@@ -1,7 +1,7 @@
 import math
 from config import SUPPORT_CHAT, OWNER_USERNAME
 from pyrogram.types import InlineKeyboardButton
-from SONALI_MUSIC_MUSIC import app
+from SONALI_MUSIC import app
 import config
 import math
 
