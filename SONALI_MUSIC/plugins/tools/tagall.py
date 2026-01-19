@@ -1,4 +1,4 @@
-from SONALI import app 
+from SONALI_MUSIC import app 
 import asyncio
 import random
 from pyrogram import Client, filters
