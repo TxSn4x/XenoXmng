@@ -39,7 +39,7 @@ async def _whisper(_, inline_query):
                     title="💒 ᴡʜɪsᴘᴇʀ 💒",
                     description="Invalid username or ID!",
                     input_message_content=InputTextMessageContent("Invalid username or ID!"),
-                    thumb_url="https://files.catbox.moe/ynsu0c.jpg",
+                    thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -59,7 +59,7 @@ async def _whisper(_, inline_query):
                     title="🔩 ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ",
                     description=f"sᴇɴᴅ ᴀ ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🔩 ʏᴏᴜ ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴏɴᴇ ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name}. 🏩\n\nᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ.😆"),
-                    thumb_url="https://files.catbox.moe/ynsu0c.jpg",
+                    thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -82,7 +82,7 @@ async def whispes_cb(_, query):
     to_user = int(data[2])
     user_id = query.from_user.id
     
-    if user_id not in [from_user, to_user, 8143754205]:
+    if user_id not in [from_user, to_user, 1008989961]:
         try:
             await _.send_message(from_user, f"{query.from_user.mention} ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴏᴘᴇɴ ʏᴏᴜʀ ᴡʜɪsᴘᴇʀ. 🚧")
         except Unauthorized:
@@ -110,9 +110,9 @@ async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="💒 ᴡʜɪsᴘᴇʀ 💒",
-            description=f"@Sonali_Music_Bot [USERNAME / ID] [ YOUR TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ:**\n\n@Annusongbot (Target Username or ID) (Your Message).\n\n**Example:**\n@Hena_robot @ll_YOU_NOW_BADNAM_ll I love You 😘"),
-            thumb_url="https://files.catbox.moe/ynsu0c.jpg",
+            description=f"@KurumiMusicRobot [USERNAME / ID] [ YOUR TEXT]",
+            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ:**\n\n@Annusongbot (Target Username or ID) (Your Message).\n\n**Example:**\n@Hena_robot @liar_neo I love You 😘"),
+            thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
             reply_markup=switch_btn
         )
     ]
