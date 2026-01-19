@@ -25,7 +25,7 @@ async def google_img_search(client: Client, message: Message):
     download_dir = "downloads"
 
     try:
-        downloader.download(query, limit=lim, output_dir=download_dir, adult_filter_off=True, force_replace=False, timeout=60)
+        downloader.download(query, limit=lim, output_dir=download_dir, adult_filter_off=False, force_replace=False, timeout=60)
         images_dir = os.path.join(download_dir, query)
         if not os.listdir(images_dir):
             raise Exception("No images were downloaded.")
@@ -33,7 +33,7 @@ async def google_img_search(client: Client, message: Message):
     except Exception as e:
         return await message.reply(f"❍ ᴇʀʀᴏʀ ɪɴ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ɪᴍᴀɢᴇs: {e}")
 
-    msg = await message.reply("❍ sᴏɴᴀʟɪ ғɪɴᴅɪɴɢ ɪᴍᴀɢᴇs.....")
+    msg = await message.reply("❍ 𝐊ᴜʀᴜᴍɪ ғɪɴᴅɪɴɢ ɪᴍᴀɢᴇs.....")
 
     count = 0
     for img in lst:
