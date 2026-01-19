@@ -1,4 +1,3 @@
-import os 
 import random
 from datetime import datetime 
 from telegraph import upload_file
@@ -8,105 +7,119 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import *
 
 #BOT FILE NAME
-from SONALI_MUSIC import app as app
-from SONALI_MUSIC.mongo.couples_db import _get_image, get_couple
-
-POLICE = [
-    [
-        InlineKeyboardButton(
-            text="• AɴɪWᴇʙ Bᴏᴛs •",
-            url=f"https://t.me/aniweb_bots",
-        ),
-    ],
-]
+from SONALI_MUSIC import app 
+as appimport get_couple, save_couple
 
 
-def dt():
-    now = datetime.now()
-    dt_string = now.strftime("%d/%m/%Y %H:%M")
-    dt_list = dt_string.split(" ")
-    return dt_list
-    
+ASSETS = Path("SONALI_MUSIC/assets")
+FALLBACK = ASSETS / "upic.png"
+OUT_DIR = Path(COUPLE_DIR)
 
-def dt_tom():
-    a = (
-        str(int(dt()[0].split("/")[0]) + 1)
-        + "/"
-        + dt()[0].split("/")[1]
-        + "/"
-        + dt()[0].split("/")[2]
-    )
-    return a
 
-tomorrow = str(dt_tom())
-today = str(dt()[0])
+def today() -> str:
+    return datetime.now().strftime("%d/%m/%Y")
 
-@app.on_message(filters.command("couples"))
-async def ctest(_, message):
-    cid = message.chat.id
-    if message.chat.type == ChatType.PRIVATE:
-        return await message.reply_text("✦ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs.")
+
+def tomorrow() -> str:
+    return (datetime.now() + timedelta(days=1)).strftime("%d/%m/%Y")
+
+
+def circular(path: str | Path) -> Image.Image:
     try:
-     #  is_selected = await get_couple(cid, today)
-     #  if not is_selected:
-         msg = await message.reply_text("❤️")
-         #GET LIST OF USERS
-         list_of_users = []
-
-         async for i in app.get_chat_members(message.chat.id, limit=50):
-             if not i.user.is_bot:
-               list_of_users.append(i.user.id)
-
-         c1_id = random.choice(list_of_users)
-         c2_id = random.choice(list_of_users)
-         while c1_id == c2_id:
-              c1_id = random.choice(list_of_users)
+        img = Image.open(path).convert("RGBA").resize((486, 486))
+    except (FileNotFoundError, UnidentifiedImageError):
+        img = Image.open(FALLBACK).convert("RGBA").resize((486, 486))
+    mask = Image.new("L", img.size, 0)
+    ImageDraw.Draw(mask).ellipse((0, 0) + img.size, fill=255)
+    img.putalpha(mask)
+    return img
 
 
-         photo1 = (await app.get_chat(c1_id)).photo
-         photo2 = (await app.get_chat(c2_id)).photo
- 
-         N1 = (await app.get_users(c1_id)).mention 
-         N2 = (await app.get_users(c2_id)).mention
-         
-         try:
-            p1 = await app.download_media(photo1.big_file_id, file_name="pfp.png")
-         except Exception:
-            p1 = "SONALI_MUSIC/assets/upic.png"
-         try:
-            p2 = await app.download_media(photo2.big_file_id, file_name="pfp1.png")
-         except Exception:
-            p2 = "SONALI_MUSIC/assets/upic.png"
-            
-         img1 = Image.open(f"{p1}")
-         img2 = Image.open(f"{p2}")
-
-         img = Image.open("SONALI_MUSIC/assets/cppic.png")
-
-         img1 = img1.resize((390, 390))
-         img2 = img2.resize((390,390))
-
-         mask = Image.new('L', img1.size, 0)
-         draw = ImageDraw.Draw(mask) 
-         draw.ellipse((0, 0) + img1.size, fill=255)
-
-         mask1 = Image.new('L', img2.size, 0)
-         draw = ImageDraw.Draw(mask1) 
-         draw.ellipse((0, 0) + img2.size, fill=255)
+async def safe_get_user(uid: int):
+    try:
+        return await app.get_users(uid)
+    except errors.PeerIdInvalid:
+        return None
 
 
-         img1.putalpha(mask)
-         img2.putalpha(mask1)
+async def safe_photo(uid: int, name: str) -> Path:
+    try:
+        chat = await app.get_chat(uid)
+        if chat.photo and chat.photo.big_file_id:
+            path = await app.download_media(chat.photo.big_file_id, file_name=OUT_DIR / name)
+            return Path(path) if path else FALLBACK
+    except Exception:
+        pass
+    return FALLBACK
 
-         draw = ImageDraw.Draw(img)
 
-         img.paste(img1, (91, 215), img1)
-         img.paste(img2, (805, 215), img2)
+async def generate_image(chat_id: int, uid1: int, uid2: int, date: str) -> str:
+    base = Image.open(ASSETS / "assets/couple.png").convert("RGBA")
+    p1 = await safe_photo(uid1, "pfp1.png")
+    p2 = await safe_photo(uid2, "pfp2.png")
 
-         img.save(f'test_{cid}.png')
-    
-         TXT = f"""
-**ㅤ◦•●◉✿ ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ  ✿◉●•◦
+    a1 = circular(p1)
+    a2 = circular(p2)
+    base.paste(a1, (410, 500), a1)
+    base.paste(a2, (1395, 500), a2)
+
+    out_path = OUT_DIR / f"couple_{chat_id}_{date.replace('/','-')}.png"
+    base.save(out_path)
+
+    for pf in (p1, p2):
+        try:
+            if pf != FALLBACK and pf.exists() and pf.parent == OUT_DIR:
+                pf.unlink()
+        except Exception:
+            pass
+
+    return str(out_path)
+
+
+@app.on_message(filters.command("couple"))
+async def couples_handler(_, message: Message):
+    if message.chat.type == ChatType.PRIVATE:
+        return await message.reply("**ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ᴡᴏʀᴋs ɪɴ ɢʀᴏᴜᴘs.**")
+
+    wait = await message.reply("🦋")
+    cid = message.chat.id
+    date = today()
+
+    record = await get_couple(cid, date)
+    if record:
+        uid1, uid2, img_path = record["user1"], record["user2"], record["img"]
+        user1 = await safe_get_user(uid1)
+        user2 = await safe_get_user(uid2)
+
+        if not (user1 and user2) or not img_path or not Path(img_path).exists():
+            record = None
+
+    if not record:
+        members = [
+            m.user.id async for m in app.get_chat_members(cid, limit=250)
+            if not m.user.is_bot
+        ]
+        if len(members) < 2:
+            await wait.edit("**ɴᴏᴛ ᴇɴᴏᴜɢʜ ᴜsᴇʀs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ.**")
+            return
+
+        tries = 0
+        while tries < 5:
+            uid1, uid2 = random.sample(members, 2)
+            user1 = await safe_get_user(uid1)
+            user2 = await safe_get_user(uid2)
+            if user1 and user2:
+                break
+            tries += 1
+        else:
+            await wait.edit("**ᴄᴏᴜʟᴅ ɴᴏᴛ ꜰɪɴᴅ ᴠᴀʟɪᴅ ᴍᴇᴍʙᴇʀꜱ.**")
+            return
+
+        img_path = await generate_image(cid, uid1, uid2, date)
+        await save_couple(cid, date, {"user1": uid1, "user2": uid2}, img_path)
+
+    caption = ("""
+     **ㅤ◦•●◉✿ ᴄᴏᴜᴘʟᴇ ᴏғ ᴛʜᴇ ᴅᴀʏ  ✿◉●•◦
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
  {N1} + {N2} = ♥︎
@@ -115,33 +128,7 @@ async def ctest(_, message):
 ❖ ᴅᴀᴛᴇ -`{tomorrow}`
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭**
 """
-    
-         await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
     )
-         await msg.delete()
-         a = upload_file(f"test_{cid}.png")
-         for x in a:
-           img = "https://graph.org/" + x
-           couple = {"c1_id": c1_id, "c2_id": c2_id}
-          
-    except Exception as e:
-        print(str(e))
-    try:
-      os.remove(f"./downloads/pfp1.png")
-      os.remove(f"./downloads/pfp2.png")
-      os.remove(f"test_{cid}.png")
-    except Exception:
-       pass
-         
 
-__mod__ = "ᴄᴏᴜᴘʟᴇ"
-__help__ = """
-**✦ /couples** - Get Todays Couples Of The Group In Interactive View
-"""
-
-
-
-
-
-
-    
+    await message.reply_photo(img_path, caption=caption)
+    await wait.delete()
