@@ -34,36 +34,11 @@ fake = Faker()
 
 # Generate person info command handler
 @app.on_message(filters.command("rand"))
-def generate_info(client, message):
-    # Generate fake data
-    name = fake.name()
-    address = fake.address()
-    country = fake.country()
-    phone_number = fake.phone_number()
-    email = fake.email()
-    city = fake.city()
-    state = fake.state()
-    zipcode = fake.zipcode()
+async def rand(_, message):
+    user_id = message.from_user.id
+    user_name = message.from_user.first_name
+    mention = f"[{user_name}](tg://user?id={user_id})"
+    mm = random.randint(1, 100)
+    RAND = f"**🍷** {mention} **ɪꜱ** {mm}**% ʀᴀɴᴅ!**"
+    await message.reply_text(RAND, reply_markup=BUTTON, disable_web_page_preview=True, quote=True)
 
-    # Create a message with the fake data
-    info_message = (
-        f"**ғᴜʟʟ ηᴧϻє :** {name}\n"
-        
-        f"**ᴧᴅᴅʀєss :** {address}\n"
-        
-        f"**𝖢σᴜηᴛʀʏ :** {country}\n"
-        
-        f"** 𝖯ʜσηє ɴᴜϻʙєʀ :** {phone_number}\n"
-        
-        f"**𝖤ϻᴧɪʟ :** {email}\n"
-        
-        f"**𝖢ɪᴛʏ :** {city}\n"
-        
-        f"**sᴛᴧᴛє :** {state}\n"
-        
-        f"**𝖹ɪᴘᴄσᴅє :** {zipcode}"
-        
-    )
-
-    # Send the fake data to the user
-    message.reply_text(info_message)
