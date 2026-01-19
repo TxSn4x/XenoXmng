@@ -6,6 +6,7 @@ from config import SUPPORT_CHAT
 
 BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=SUPPORT_CHAT)]])
 
+RAND = "https://files.catbox.moe/tehyii.mp4"
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
 SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"
 LESBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
