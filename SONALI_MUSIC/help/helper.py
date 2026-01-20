@@ -100,8 +100,8 @@ class Helper(object):
 
 ❍ /all ➠ ᴧηʏ ᴡʀɪᴛᴛєη ᴛєxᴛ ᴛᴧɢ
 ❍ /alloff ➠ sᴛσᴘ ᴛᴧɢ
-
-
+❍ /tagall ➠ sᴛᴀʀᴛ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ᴛᴀɢ
+❍ /tagoff ➠ sᴛᴏᴘ ʀᴀɴᴅᴏᴍ ᴍᴇssᴀɢᴇ ᴛᴀɢ
 ❍ /shayari ➠ ʀᴧηᴅσϻ sʜᴧʏᴧʀɪ ᴛᴧɢ 
 ❍ /shstop ⇴ sᴛσᴘ ᴛᴧɢ
 
