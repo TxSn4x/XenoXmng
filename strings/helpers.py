@@ -109,7 +109,7 @@ HELP_10 = """```
 ❍ /ping : sʜσᴡs ᴛʜє ᴩɪηɢ ᴧηᴅ sʏsᴛєϻ sᴛᴧᴛs σғ ᴛʜє ʙσᴛ
 ❍ /stats : sʜσᴡs ᴛʜє σᴠєʀᴧʟʟ sᴛᴧᴛs σғ ᴛʜє ʙσᴛ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/kittuu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/aniweb_bots)**
 """
 
 HELP_11 = """```
