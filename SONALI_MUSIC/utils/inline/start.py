@@ -30,7 +30,7 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
-            InlineKeyboardButton("⌯ υᴘᴅᴧᴛєs ⌯", callback_data="https://t.me/aniweb_bots"),
+            InlineKeyboardButton("⌯ υᴘᴅᴧᴛєs ⌯", url=config.SUPPORT_CHANNEL),
         ],
         [
             InlineKeyboardButton("⌯ ʏᴛ-ᴀᴘɪ ⌯", callback_data="bot_info_data"),
