@@ -8,7 +8,7 @@ from pyrogram.types import (
 
 whisper_db = {}
 
-switch_btn = InlineKeyboardMarkup([[InlineKeyboardButton("💒 sᴛᴀʀᴛ ᴡʜɪsᴘᴇʀ 💒", switch_inline_query_current_chat="")]])
+switch_btn = InlineKeyboardMarkup([[InlineKeyboardButton(" sᴛᴀʀᴛ ᴡʜɪsᴘᴇʀ ", switch_inline_query_current_chat="")]])
 
 async def _whisper(_, inline_query):
     data = inline_query.query
@@ -17,9 +17,9 @@ async def _whisper(_, inline_query):
     if len(data.split()) < 2:
         mm = [
             InlineQueryResultArticle(
-                title="💒 ᴡʜɪsᴘᴇʀ 💒",
+                title=" ᴡʜɪsᴘᴇʀ ",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
-                input_message_content=InputTextMessageContent(f"💒 ᴜsᴀɢᴇ :\n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
+                input_message_content=InputTextMessageContent(f" ᴜsᴀɢᴇ :\n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
                 thumb_url="https://files.catbox.moe/ynsu0c.jpg",
                 reply_markup=switch_btn
             )
@@ -36,7 +36,7 @@ async def _whisper(_, inline_query):
         except:
             mm = [
                 InlineQueryResultArticle(
-                    title="💒 ᴡʜɪsᴘᴇʀ 💒",
+                    title=" ᴡʜɪsᴘᴇʀ ",
                     description="Invalid username or ID!",
                     input_message_content=InputTextMessageContent("Invalid username or ID!"),
                     thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
@@ -45,20 +45,20 @@ async def _whisper(_, inline_query):
             ]
         
         try:
-            whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton("💒 ᴡʜɪsᴘᴇʀ 💒", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}")]])
-            one_time_whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton("🔩 ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}_one")]])
+            whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton(" ᴡʜɪsᴘᴇʀ ", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}")]])
+            one_time_whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton(" ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}_one")]])
             mm = [
                 InlineQueryResultArticle(
-                    title="💒 ᴡʜɪsᴘᴇʀ 💒",
+                    title=" ᴡʜɪsᴘᴇʀ ",
                     description=f"sᴇɴᴅ ᴀ ᴡʜɪsᴘᴇʀ ᴛᴏ{user.first_name}!",
-                    input_message_content=InputTextMessageContent(f"💒 ʏᴏᴜ ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴡʜɪsᴘᴇʀ{user.first_name}. 🏩\n\nᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ.😆"),
-                    thumb_url="https://files.catbox.moe/ynsu0c.jpg",
+                    input_message_content=InputTextMessageContent(f" ʏᴏᴜ ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴡʜɪsᴘᴇʀ{user.first_name}. \n\nᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ."),
+                    thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
-                    title="🔩 ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ",
+                    title="ed iᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ",
                     description=f"sᴇɴᴅ ᴀ ᴏɴᴇ-ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name}!",
-                    input_message_content=InputTextMessageContent(f"🔩 ʏᴏᴜ ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴏɴᴇ ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name}. 🏩\n\nᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ.😆"),
+                    input_message_content=InputTextMessageContent(f" ʏᴏᴜ ᴀʀᴇ sᴇɴᴅɪɴɢ ᴀ ᴏɴᴇ ᴛɪᴍᴇ ᴡʜɪsᴘᴇʀ ᴛᴏ {user.first_name}. \n\nᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ."),
                     thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
                     reply_markup=one_time_whisper_btn
                 )
@@ -84,11 +84,11 @@ async def whispes_cb(_, query):
     
     if user_id not in [from_user, to_user, 1008989961]:
         try:
-            await _.send_message(from_user, f"{query.from_user.mention} ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴏᴘᴇɴ ʏᴏᴜʀ ᴡʜɪsᴘᴇʀ. 🚧")
+            await _.send_message(from_user, f"{query.from_user.mention} ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴏᴘᴇɴ ʏᴏᴜʀ ᴡʜɪsᴘᴇʀ. ")
         except Unauthorized:
             pass
         
-        return await query.answer("⚠️ ᴛʜɪs ᴡʜɪsᴘᴇʀ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ 🚨", show_alert=True)
+        return await query.answer(" ᴛʜɪs ᴡʜɪsᴘᴇʀ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ ", show_alert=True)
     
     search_msg = f"{from_user}_{to_user}"
     
@@ -97,7 +97,7 @@ async def whispes_cb(_, query):
     except:
         msg = "🚫 ᴇʀʀᴏʀ !!\n\nᴡʜɪsᴘᴇʀ ʜᴀs ʙᴇᴇɴ ᴅᴇʟᴇᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ !!"
     
-    SWITCH = InlineKeyboardMarkup([[InlineKeyboardButton("🗼ɢᴏ ɪɴʟɪɴᴇ 🗼", switch_inline_query_current_chat="")]])
+    SWITCH = InlineKeyboardMarkup([[InlineKeyboardButton(" ɢᴏ ɪɴʟɪɴᴇ ", switch_inline_query_current_chat="")]])
     
     await query.answer(msg, show_alert=True)
     
@@ -111,7 +111,7 @@ async def in_help():
         InlineQueryResultArticle(
             title="💒 ᴡʜɪsᴘᴇʀ 💒",
             description=f"@KurumiMusicRobot [USERNAME / ID] [ YOUR TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ:**\n\n@Annusongbot (Target Username or ID) (Your Message).\n\n**Example:**\n@Hena_robot @liar_neo I love You 😘"),
+            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ:**\n\n@KurumiMusicRobot (Target Username or ID) (Your Message).\n\n**Example:**\n@KurumiMusicRobot @aniweb_bots Yo! "),
             thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
             reply_markup=switch_btn
         )
