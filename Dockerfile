@@ -1,16 +1,25 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+FROM python:3.10-slim
 
-RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
-    sed -i '/security.debian.org/d' /etc/apt/sources.list && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg aria2 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    ca-certificates \
+    gnupg \
+    ffmpeg \
+    aria2 \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY . /app/
-WORKDIR /app/
+# Install Node.js 18 LTS (safe & supported)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs \
+    && npm install -g yarn \
+    && npm cache clean --force
 
-RUN python -m pip install --no-cache-dir --upgrade pip
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+WORKDIR /app
+COPY . /app
 
-CMD bash start
+# Python deps
+RUN python -m pip install --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+
+CMD ["bash", "start"]
