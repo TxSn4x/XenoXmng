@@ -1,6 +1,6 @@
-FROM python:3.10-slim
+FROM python:3.10-slim-bullseye
 
-# Install system dependencies
+# System deps
 RUN apt-get update && apt-get install -y \
     curl \
     ca-certificates \
@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     aria2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Node.js 18 LTS (safe & supported)
+# Node.js 18 LTS (last safe version)
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs \
     && npm install -g yarn \
@@ -19,7 +19,7 @@ WORKDIR /app
 COPY . /app
 
 # Python deps
-RUN python -m pip install --upgrade pip \
+RUN python -m pip install --upgrade pip setuptools wheel \
     && pip install --no-cache-dir -r requirements.txt
 
 CMD ["bash", "start"]
