@@ -1,4 +1,6 @@
 FROM python:3.10-slim-bullseye
+ENV PYTHONUNBUFFERED=1
+
 
 # System deps
 RUN apt-get update && apt-get install -y \
