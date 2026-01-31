@@ -6,7 +6,7 @@ import requests
 
 
 def upload_file(file_path):
-    url = "https://api.imgbb.com/1/upload"
+    url = "https://catbox.moe/user/api.php"
     data = {"reqtype": "fileupload", "json": "true"}
     files = {"fileToUpload": open(file_path, "rb")}
     response = requests.post(url, data=data, files=files)
