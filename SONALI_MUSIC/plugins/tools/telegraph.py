@@ -1,14 +1,7 @@
 import os
-from datetime import datetime
-
-from PIL import Image
-from telegraph import Telegraph, exceptions, upload_file
-
-from MukeshRobot import telethn as tbot
-from MukeshRobot.events import register
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from MukeshRobot import app
+from SONALI_MUSIC import app
 import requests
 
 
