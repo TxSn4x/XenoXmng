@@ -111,7 +111,7 @@ async def in_help():
         InlineQueryResultArticle(
             title="💒 ᴡʜɪsᴘᴇʀ 💒",
             description=f"@KurumiMusicRobot [USERNAME / ID] [ YOUR TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ:**\n\n@KurumiMusicRobot (Target Username or ID) (Your Message).\n\n**Example:**\n@KurumiMusicRobot @aniweb_bots Yo! "),
+            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ:**\n\n@KurumiMusicRobot (Target Username or ID) (Your Message).\n\n**Example:**\n@alyamusiccbot @dramaX_view Yo! "),
             thumb_url="https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg",
             reply_markup=switch_btn
         )
