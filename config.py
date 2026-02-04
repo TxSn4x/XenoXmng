@@ -19,7 +19,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", -1003536603139))
 OWNER_ID = int(getenv("OWNER_ID", 1008989961))
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "snaxymng")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/txsn4x/snaxymng",)
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/txsn4x/xenoxmng",)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
