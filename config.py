@@ -53,19 +53,19 @@ lyrical = {}
 votemode = {}
 autoclean = []
 confirmer = {}
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/e2ccdc8f93a67b995072c-37cdfd36f3dd2f4dbb.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://graph.org/file/95e7a771b14e2da41d7c7-54f29bec291e2ad228.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/0291115c13be484b168b9-07f26befb5f9029e30.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://graph.org/file/702f53619a31dd8e90b27-2963dc9f4ec47a0027.jpg")
 
-PLAYLIST_IMG_URL = "https://graph.org/file/01f6bff76d899c77153ba-112d924074f9890051.jpg"
-STATS_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-STREAM_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/e8d2d4c10a317e3b62bcf-f5e9bf6e7ad41e222c.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
+STATS_IMG_URL = "https://graph.org/file/a911d7737e6276c3f22aa-b7ae38f0fc2286c1c9.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/ofodqh.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/ofodqh.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/ofodqh.jpg"
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
