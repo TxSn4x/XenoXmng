@@ -27,7 +27,7 @@ class Helper(object):
 
 ❍ /ask [ǫυєʀʏ] : sєᴧʀᴄʜ ᴛʜє ᴧηʏ ᴛʏᴘє ǫυєsᴛɪση
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -41,7 +41,7 @@ class Helper(object):
 ```
 ❖ єxᴧϻᴘʟє : /google ʜɪɴᴅɪ sᴏɴɢs```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
     HELP_03 = '''```
@@ -49,14 +49,14 @@ class Helper(object):
 **❖ sᴇɴᴅ ᴡʜɪsᴘᴇʀ ᴍᴇssᴀɢᴇ ❖**
 
 ```
- єxᴧϻᴘʟє : @KurumiMusicRobot @Aniweb_Bots I love You 😘
+ єxᴧϻᴘʟє : @alyamusiccbot @dramaX_view I love You 😘
 ```
 
 <u>**❖ ᴛєxᴛ ᴛσ ᴠσɪᴄє**</u>
 
 **❍ /tts : [ᴛєxᴛ]
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots) **
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view) **
 '''
 
 
@@ -69,7 +69,7 @@ class Helper(object):
 ❍ /groupinfo : ɢєᴛ ʏσᴜʀ ɢʀσᴜᴘ ɪηғσ `ᴇx :- /groupinfo ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ`
 ❍ /status : ɢєᴛ ʏσᴜʀ ɢʀσᴜᴘ sᴛᴧᴛᴜs
 
-𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -82,7 +82,7 @@ class Helper(object):
 ```
 ❖ єxᴧϻᴘʟє : /font Neo```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots) **
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view) **
 '''
 
     HELP_06 = '''```
@@ -90,7 +90,7 @@ class Helper(object):
 
 **❍ /math ➠ sσʟᴠєs ϻᴧᴛʜєϻᴧᴛɪᴄᴧʟ ᴘʀσʙʟєϻs ᴧηᴅ ǫυᴧᴛɪσηs
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -105,7 +105,7 @@ class Helper(object):
 ❍ /shayari ➠ ʀᴧηᴅσϻ sʜᴧʏᴧʀɪ ᴛᴧɢ 
 ❍ /shstop ⇴ sᴛσᴘ ᴛᴧɢ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -114,9 +114,9 @@ class Helper(object):
 **❍ /couples ➠ ᴜsє ᴛʜɪs ᴄσϻϻᴧηᴅ ᴧηᴅ sєє ɢʀσᴜᴘs ᴄσᴜᴘʟєs.
 ❍ /wish ➠ ᴜsє ᴛʜɪs ᴄσϻϻᴧηᴅ ᴧηᴅ sєє ɢʀσᴜᴘs ᴄσᴜᴘʟєs.
 ❍ /cute ➠ ᴄʜєᴄᴋ ʏσυʀ ᴄυᴛєηєss.
-❍ /love ➠ ᴧᴅᴅ ᴛᴡᴏ ηᴧϻєs ᴧηᴅ sєє ʟσᴠᴇ ᴘσssɪʙɪʟɪᴛʏ !! `ʟɪᴋᴇ 𝐍ᴇxᴜs + 𝐊ᴜʀᴜᴍɪ.`
+❍ /love ➠ ᴧᴅᴅ ᴛᴡᴏ ηᴧϻєs ᴧηᴅ sєє ʟσᴠᴇ ᴘσssɪʙɪʟɪᴛʏ !! `ʟɪᴋᴇ ꪖʟʏᴀ + Ꭰʀᴀᴍᴀ 𝑋.`
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -130,7 +130,7 @@ class Helper(object):
 
 ❍ /hastag : [ᴛєxᴛ]
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -142,7 +142,7 @@ class Helper(object):
 ❍ /kang ➠ ʀєᴘʟʏ ᴧηʏ sᴛɪᴄᴋєʀ & ᴄʀєᴀᴛє ʏσᴜʀ sᴛɪᴄᴋєʀ ᴘᴧᴄᴋ
 ❍ /st ➠ ғɪηᴅ ᴏʀɪɢɪηᴧʟ sᴛɪᴄᴋєʀ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -160,7 +160,7 @@ class Helper(object):
 ❍ /truth [sєηᴅs ᴧ ʀᴧηᴅσϻ ᴛʀυᴛʜ sᴛʀɪηɢ]
 ❍ /dare : [sєηᴅs ᴧ ʀᴧηᴅσϻ ᴅᴧʀє sᴛʀɪηɢ]
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -171,7 +171,7 @@ class Helper(object):
 ❍ /q : ᴄʀєᴧᴛє ᴧ ǫυσᴛє ғʀσϻ ᴛʜє ϻєssᴧɢє
 ❍ /q r : ᴄʀєᴧᴛє ᴧ ǫυσᴛє ғʀσϻ ᴛʜє ϻєssᴧɢє ᴡɪᴛʜ ʀєᴘʟʏ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -183,7 +183,7 @@ class Helper(object):
 ❍ /truth : sєηᴅs ᴧ ʀᴧηᴅσϻ ᴛʀυᴛʜ sᴛʀɪηɢ
 ❍ /dare : sєηᴅs ᴧ ʀᴧηᴅσϻ ᴅᴧʀє sᴛʀɪηɢ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -228,7 +228,7 @@ class Helper(object):
 ᴛʜɪs ᴄσϻϻᴧηᴅ ᴡɪʟʟ ᴡσʀᴋ σηʟʏ ɪғ ʏσυ ɢɪᴠє ʙᴧη ʀɪɢʜᴛs ᴛσ ᴛʜє ʙσᴛ ᴡɪᴛʜ ᴧᴅϻɪη```
 
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
     HELP_15 = '''```
@@ -237,7 +237,7 @@ class Helper(object):
 **❍ /kick <userhandle> : ᴋɪᴄᴋs ᴧ υsєʀ συᴛ σғ ᴛʜє ɢʀσυᴘ, (ᴠɪᴧ ʜᴧηᴅʟє, σʀ ʀєᴘʟʏ)
 ❍ /kickme: ᴋɪᴄᴋs ᴛʜє υsєʀ ᴡʜσ ɪssυєᴅ ᴛʜє ᴄσϻϻᴧηᴅ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -254,7 +254,7 @@ class Helper(object):
 ```
 ᴛʜɪs ᴄσϻϻᴧηᴅ ᴡɪʟʟ ᴡσʀᴋ σηʟʏ ɪғ ʏσυ ɢɪᴠє ʙᴧη ʀɪɢʜᴛs ᴛσ ᴛʜє ʙσᴛ ᴡɪᴛʜ ᴧᴅϻɪη```
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -284,7 +284,7 @@ class Helper(object):
 ❍ /unbanall ➠ ᴜηʙᴧη ᴧʟʟ ʙᴧη ϻєϻʙєʀs
 ❍ /unpinall ➠ ᴜηᴘɪη ᴧʟʟ ᴘɪη ᴍєssᴧɢᴇ**
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -294,7 +294,7 @@ class Helper(object):
 **❍ /staff ➠ ᴅɪsᴘʟᴧʏs ᴛʜє ʟɪsᴛ σғ sᴛᴧғғ ϻєϻʙєʀs
 ❍ /bots ➠ ᴅɪsᴘʟᴧʏs ᴛʜє ʟɪsᴛ σғ ʙσᴛs ɪη ᴛʜє ɢʀσυᴘ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -306,7 +306,7 @@ class Helper(object):
 ❍ /setphoto ➠ sєᴛs ᴛʜє ɢʀσυᴘ ᴘʜσᴛσ
 ❍ /removephoto ➠ ʀєϻσᴠєs ᴛʜє ɢʀσυᴘ ᴘʜσᴛσ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -317,7 +317,7 @@ class Helper(object):
 **❍ /zombies ➠ ʀєϻσᴠєs ᴧᴄᴄ ᴅєʟєᴛєᴅ ϻєϻʙєʀs ғʀσϻ ᴛʜє ɢʀσυᴘ
 
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -332,7 +332,7 @@ class Helper(object):
 ❍ /basket [ʙᴧsᴋєᴛʙᴧʟʟ ɢᴧϻє]
 ❍ /football [ғσσᴛʙᴧʟʟ ɢᴧϻє]
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -343,21 +343,21 @@ class Helper(object):
 ❍ /imposter on
 ❍ /imposter off
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼𓆪](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼𓆪](https://t.me/dramaX_view)**
 '''
 
     HELP_23 = '''```
 ❖ sᴧηɢ ϻᴧᴛᴧ ᴄσϻϻᴧηᴅ ❖```
 **❍ /sg ➠ υsєʀ ηᴧϻє ᴧηᴅ υsєʀηᴧϻє ʜɪsᴛσʀʏ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/aniweb_bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
     HELP_24 = '''```
 ❖ ᴛʀᴧηsʟᴧᴛєs ❖```
 **❍ /tr ➠ ᴄᴧη ᴛʀᴧηꜱʟᴧᴛє ϻυʟᴛɪᴘʟє ʟᴧηɢυᴧɢєs
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -368,7 +368,7 @@ class Helper(object):
 
 `єxᴧϻᴘʟє : /git username`
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
 
 
@@ -379,7 +379,7 @@ class Helper(object):
 ❍ /tgm [ʀєᴘʟʏ ᴛσ ᴧηʏ ϻєᴅɪᴧ]
 ❍ /tgt [ʀєᴘʟʏ ᴛσ ᴧηʏ ϻєᴅɪᴧ]
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)**
 '''
     HELP_PROMOTION = '''
 **─────────────────────────
@@ -396,32 +396,16 @@ class Helper(object):
 ─────────────────────────
 ʙєsᴛ ᴧηᴅ ᴄʜєᴧᴘ ɪη ᴛєʟєɢʀᴧϻ 400-500+ ϻєϻʙєʀs ɪη σηє ᴘʀσϻσᴛɪση ɢυʀᴧηᴛєє...
 ─────────────────────────
-❍ ᴄσηᴛᴧᴄᴛ - [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)
+❍ ᴄσηᴛᴧᴄᴛ - [˹x ᴇ ɴ ɪ x˼](https://t.me/about_xenixx)
 ─────────────────────────**
 '''
     HELP_ABOUT = '''
-**─────────────────────────
-│ ᴡєʟᴄσϻє ᴛσ ˹[˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)˼ ʙσᴛ sᴛᴧᴛυs │
-─────────────────────────
-       ❖ │ ʀєᴧʟ ᴛɪϻє ʙσᴛ's sᴛᴧᴛυs │❖
-─────────────────────────
-╭⎋ [˹𝐂ꪮʟᴜꪑʙɪꪀꪖ˼](https://t.me/ColumbinaxMusicBot) : ᴧʟɪᴠє 
-╰⊚ υᴘᴛɪϻє : 12ʜ:58ϻ:20s | ᴄᴘυ : 10.0% | 
-       υsᴧɢє : 24 | ᴧssɪsᴛᴧηᴛs : 01
-       
-╭⎋ [˹𝐙ᴜᴋɪ𝐆ᴜᴀʀᴅɪᴀɴ](https://t.me/ZukiEditGuardBot) : ᴧʟɪᴠє 
-╰⊚ υᴘᴛɪϻє : 12ʜ:58ϻ:20s | ᴄᴘυ : 23.0% | 
-       υsᴧɢє : 24 | 𝐄ᴅɪᴛ𝐆ᴜᴀʀᴅɪᴀɴ
 
-╭⎋ [˹𝐍ᴇᴢᴜᴋᴏ˼](https://t.me/NezukoMusicxBot) : ᴧʟɪᴠє 
-╰⊚ υᴘᴛɪϻє : 12ʜ:58ϻ:20s | ᴄᴘυ : 8.0% | 
-       υsᴧɢє : 24 | ᴧssɪsᴛᴧηᴛs : 01
-─────────────────────────
-⊚ ʙσᴛ sᴛᴧᴛυs ᴧηᴅ ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/aniweb_bots)
-─────────────────────────
-⊚ ʟᴧsᴛ ᴄʜєᴄᴋєᴅ ση : ᴅᴧᴛє : 20 ɴᴏᴠ 2025 
-─────────────────────────
-❍ 𝐏ᴏᴡєʀєᴅ 𝖡ʏ » [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/Aniweb_Bots)
+╭⎋────────────────────────
+Mᴏʀᴇ ʙᴏᴛ ᴡɪʟʟ ᴄᴏᴍᴇ sᴏᴏɴ sᴛᴀʏ ᴛᴜɴᴇᴅ
+
+
+❍ 𝐏ᴏᴡєʀєᴅ 𝖡ʏ » [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)
 ─────────────────────────**
 '''
     HELP_ALLBOT = '''
@@ -436,9 +420,9 @@ class Helper(object):
 ● ᴇηᴊᴏʏ ғєєʟ ғʀєє ϻᴜsɪᴄ ᴡɪᴛʜ 𝐊ᴜʀᴜᴍɪ.
 ● ᴧᴅᴅ ϻє ηᴏᴡ ʙᴧʙʏ ɪɴ ʏᴏᴜʀ ɢʀσᴜᴘs.
 ─────────────────────────
-❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ [ ˹AɴɪWᴇʙ Bᴏᴛs ˼ ](https://t.me/aniweb_bots)
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ [ ˹AɴɪWᴇʙ Nᴇxᴜs˼ ](https://t.me/aniweb_nexus)
-❖ ʙᴏᴛ σᴡηєʀ ➥ [𝚴ᴇᴏ](https://t.me/liar_neo)
+❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ ➥ [ ˹Ꭰʀᴀᴍᴀ 𝑋˼ ](https://t.me/dramaX_view)
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ ➥ [ ˹𝐀ɴɪᴍᴇ 𝐇ᴇʟɪx˼ ](https://t.me/anime_helixx)
+❖ ʙᴏᴛ σᴡηєʀ ➥ [x ᴇ ɴ ɪ x](https://t.me/xeenixx)
 ❖ ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ ➥ [𝖠ɴɪ𝖶ᴇʙ 𝖲ʜᴏɢᴜɴᴀᴛᴇ](https://t.me/aniweb_shogunate)
 ─────────────────────────
 ❖ ᴄʟɪᴄᴋ ση ᴛʜє ʜєʟᴩ ʙυᴛᴛση ᴛσ ɢєᴛ ɪηғσ
