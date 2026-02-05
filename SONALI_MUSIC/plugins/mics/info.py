@@ -73,7 +73,7 @@ INFO_TEXT = """
 ❍ ᴅᴄ ɪᴅ ▷ {}
 ❍ ʙɪᴏ ▷ {}
 
-❖ ϻᴧᴅє ʙʏ  ➛ [˹AɴɪWᴇʙ Bᴏᴛs˼](https://t.me/aniweb_bots)
+❖ ϻᴧᴅє ʙʏ  ➛ [˹Ꭰʀᴀᴍᴀ 𝑋˼](https://t.me/dramaX_view)
 ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭
 
 """
