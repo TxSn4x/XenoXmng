@@ -29,7 +29,7 @@ API_KEY = getenv("API_KEY", 'NxGBNexGenBots790d34') # youtube song api key, gene
 
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dramaX_view")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/helix_bots")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/anime_helixx")
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "9000"))
