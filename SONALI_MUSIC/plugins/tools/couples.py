@@ -14,8 +14,8 @@ from SONALI_MUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="• Ꭰʀᴀᴍᴀ 𝑋 •",
-            url=f"https://t.me/dramaX_view",
+            text="• 𝐇ᴇʟɪx 𝐁ᴏᴛs •",
+            url=f"https://t.me/helix_bots",
         ),
     ],
 ]
