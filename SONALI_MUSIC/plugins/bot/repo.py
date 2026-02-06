@@ -13,7 +13,7 @@ start_txt = """**
  
 ❉  ʏᴏᴜ ᴄᴧη ᴜsє мʏ ᴘᴜʙʟɪᴄ ʀєᴘσs !!  
 
-✼ || [˹Ꭰʀᴀᴍᴀ 𝑋˼ 💞](https://t.me/dramaX_view) ||
+✼ || [˹𝐇ᴇʟɪx 𝐁ᴏᴛs˼ 💞](https://t.me/helix_bots) ||
  
 ❊ ʀᴜη 24x7 ʟᴧɢ ϝʀєє ᴡɪᴛʜσᴜᴛ sᴛσᴘ**
 """
@@ -29,7 +29,7 @@ async def start(_, msg):
         ],
         [
           InlineKeyboardButton("• ʜєʟᴘ •", url="https://t.me/anime_helixx"),
-          InlineKeyboardButton("• 𝛅ᴜᴘᴘσʀᴛ •", url="https://t.me/dramaX_view"),
+          InlineKeyboardButton("• 𝛅ᴜᴘᴘσʀᴛ •", url="https://t.me/helix_bots"),
           ],
 [
 InlineKeyboardButton("• ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ •", url=f"https://t.me/aniweb_shogunate"),
