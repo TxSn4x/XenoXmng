@@ -4,7 +4,7 @@ import random
 import requests
 from SONALI_MUSIC import app 
 
-SUPPORT_CHAT = "aniweb_nexus"
+SUPPORT_CHAT = "anime_helix"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
