@@ -2,7 +2,6 @@ aiofiles
 bard
 SpeechRecognition
 aiohttp 
-asyncio
 deepai
 python-whois
 dnspython
@@ -27,7 +26,6 @@ py-tgcalls==0.9.7
 pykeyboard
 pyshorteners
 #pyrogram==2.0.106
-kurigram==2.2.6
 python-dotenv
 pyyaml==6.0.1
 requests
@@ -38,7 +36,6 @@ tgcrypto
 telegraph
 unidecode
 yt-dlp>=2024.0.0
-youtube-search
 youtube-search-python
 gtts
 git+https://github.com/AsmSafone/SafoneAPI
@@ -47,7 +44,6 @@ httpx
 gpytranslate
 openai==0.28.0
 pickledb
-python-telegram-bot
 pycryptodome
 opencv-python
 bing-image-urls
@@ -55,3 +51,4 @@ bing_image_downloader
 git+https://github.com/TEAMPURVI/PurviAPI
 googlesearch-python
 sympy
+pyrogram==2.0.106
