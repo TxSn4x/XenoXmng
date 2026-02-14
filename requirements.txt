@@ -52,3 +52,6 @@ git+https://github.com/TEAMPURVI/PurviAPI
 googlesearch-python
 sympy
 pyrogram==2.0.106
+kurigram==2.2.6
+python-telegram-bot
+youtube-search
