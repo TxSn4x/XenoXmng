@@ -151,9 +151,8 @@ async def play_commnd(
             if "playlist" in url:
                 try:
     details, track_id = await YouTube.track(query)
-except:
+except Exception:
     try:
-        # fallback direct ytsearch
         details, track_id = await YouTube.track(f"ytsearch:{query}")
     except Exception as e:
         return await mystic.edit_text(f"Search Failed:\n{e}")
