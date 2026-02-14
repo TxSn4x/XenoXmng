@@ -26,8 +26,18 @@ from config import BANNED_USERS, lyrical
 
 
 @app.on_message(
-   filters.command(["play", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"] ,prefixes=["/", "!", "%", ",", "", ".", "@", "#"])
-            
+    filters.command(
+        [
+            "play",
+            "vplay",
+            "cplay",
+            "cvplay",
+            "playforce",
+            "vplayforce",
+            "cplayforce",
+            "cvplayforce",
+        ]
+    )
     & filters.group
     & ~BANNED_USERS
 )
@@ -43,7 +53,6 @@ async def play_commnd(
     url,
     fplay,
 ):
-    
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
@@ -58,7 +67,6 @@ async def play_commnd(
         if message.reply_to_message
         else None
     )
-
     video_telegram = (
         (message.reply_to_message.video or message.reply_to_message.document)
         if message.reply_to_message
@@ -150,12 +158,11 @@ async def play_commnd(
         if await YouTube.exists(url):
             if "playlist" in url:
                 try:
-    details, track_id = await YouTube.track(query)
-except Exception:
-    try:
-        details, track_id = await YouTube.track(f"ytsearch:{query}")
-    except Exception as e:
-        return await mystic.edit_text(f"Search Failed:\n{e}")
+                    details = await YouTube.playlist(
+                        url,
+                        config.PLAYLIST_FETCH_LIMIT,
+                        message.from_user.id,
+                    )
                 except:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
@@ -202,12 +209,9 @@ except Exception:
                 cap = _["play_11"].format(app.mention, message.from_user.mention)
             elif "album" in url:
                 try:
-    details, track_id = await YouTube.track(query)
-except:
-    try:
-        details, track_id = await YouTube.track(f"ytsearch:{query}")
-    except Exception as e:
-        return await mystic.edit_text(f"Search Failed:\n{e}")
+                    details, plist_id = await Spotify.album(url)
+                except:
+                    return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "spalbum"
                 img = config.SPOTIFY_ALBUM_IMG_URL
@@ -386,7 +390,6 @@ except:
             await mystic.delete()
             await message.reply_photo(
                 photo=img,
-                has_spoiler=True,
                 caption=cap,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -423,7 +426,6 @@ except:
                 await mystic.delete()
                 await message.reply_photo(
                     photo=img,
-                    has_spoiler=True,
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
@@ -630,7 +632,6 @@ async def slider_queries(client, CallbackQuery, _):
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
             media=thumbnail,
-            has_spoiler=True,
             caption=_["play_10"].format(
                 title.title(),
                 duration_min,
@@ -652,7 +653,6 @@ async def slider_queries(client, CallbackQuery, _):
         buttons = slider_markup(_, vidid, user_id, query, query_type, cplay, fplay)
         med = InputMediaPhoto(
             media=thumbnail,
-            has_spoiler=True,
             caption=_["play_10"].format(
                 title.title(),
                 duration_min,
