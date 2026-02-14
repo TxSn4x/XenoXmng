@@ -203,9 +203,12 @@ except:
                 cap = _["play_11"].format(app.mention, message.from_user.mention)
             elif "album" in url:
                 try:
-                    details, plist_id = await Spotify.album(url)
-                except:
-                    return await mystic.edit_text(_["play_3"])
+    details, track_id = await YouTube.track(query)
+except:
+    try:
+        details, track_id = await YouTube.track(f"ytsearch:{query}")
+    except Exception as e:
+        return await mystic.edit_text(f"Search Failed:\n{e}")
                 streamtype = "playlist"
                 plist_type = "spalbum"
                 img = config.SPOTIFY_ALBUM_IMG_URL
