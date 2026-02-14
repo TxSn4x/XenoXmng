@@ -150,11 +150,13 @@ async def play_commnd(
         if await YouTube.exists(url):
             if "playlist" in url:
                 try:
-                    details = await YouTube.playlist(
-                        url,
-                        config.PLAYLIST_FETCH_LIMIT,
-                        message.from_user.id,
-                    )
+    details, track_id = await YouTube.track(query)
+except:
+    try:
+        # fallback direct ytsearch
+        details, track_id = await YouTube.track(f"ytsearch:{query}")
+    except Exception as e:
+        return await mystic.edit_text(f"Search Failed:\n{e}")
                 except:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
